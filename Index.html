@@ -1,0 +1,2119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff5ca8">
+
+<title>Happy Birthday Sister 💖</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#08030f;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+#intro{
+    position:fixed;
+    inset:0;
+    z-index:99999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    overflow:hidden;
+
+    background:
+        radial-gradient(circle at 50% 20%,#a34891,#40144f 42%,#08020e 85%);
+
+    transition:1.2s ease;
+}
+
+#intro.hide{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+}
+
+.stars{
+    position:absolute;
+    inset:0;
+}
+
+.star{
+    position:absolute;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    box-shadow:0 0 12px white;
+    animation:twinkle 1.5s infinite alternate;
+}
+
+@keyframes twinkle{
+    from{
+        opacity:.2;
+        transform:scale(.5);
+    }
+    to{
+        opacity:1;
+        transform:scale(1.5);
+    }
+}
+
+.intro-content{
+    position:relative;
+    z-index:5;
+    padding:25px;
+}
+
+.intro-content small{
+    letter-spacing:5px;
+    color:#ffd7e9;
+}
+
+.intro-content h1{
+    font-size:clamp(45px,12vw,90px);
+    line-height:.9;
+    margin:25px 0;
+}
+
+.gradient{
+    background:
+        linear-gradient(
+            90deg,
+            #fff,
+            #ff8ec7,
+            #b891ff,
+            #fff
+        );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+
+    animation:gradient 4s linear infinite;
+}
+
+@keyframes gradient{
+    to{
+        background-position:300%;
+    }
+}
+
+.intro-content p{
+    color:#f6d9e9;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.open-btn{
+    border:0;
+    padding:17px 32px;
+    border-radius:50px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff4e9b,
+            #9758ff
+        );
+
+    font-size:17px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 10px 50px #ff4e9b88;
+
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    50%{
+        transform:scale(1.06);
+
+        box-shadow:
+            0 15px 70px #ff4e9bbb;
+    }
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+#page{
+    opacity:0;
+    transition:1s;
+}
+
+#page.show{
+    opacity:1;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    min-height:100vh;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    padding:70px 20px;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #ff6dbb55,
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 80% 20%,
+            #8564ff55,
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #100521,
+            #44143e,
+            #a83b73
+        );
+}
+
+.moon{
+    position:absolute;
+
+    width:120px;
+    height:120px;
+
+    right:8%;
+    top:7%;
+
+    border-radius:50%;
+
+    background:#fff5cf;
+
+    box-shadow:
+        0 0 90px #fff0aacc;
+}
+
+.hero-content{
+    position:relative;
+    z-index:5;
+
+    max-width:1000px;
+}
+
+.badge{
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:#ffffff14;
+
+    border:1px solid #ffffff35;
+
+    backdrop-filter:blur(10px);
+
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(48px,11vw,105px);
+
+    line-height:.9;
+
+    letter-spacing:-5px;
+}
+
+.hero h1 span{
+    display:block;
+}
+
+.hero-text{
+    max-width:700px;
+
+    margin:25px auto;
+
+    color:#ffe5f1;
+
+    line-height:1.8;
+
+    font-size:18px;
+}
+
+
+/* =====================================================
+   ANIME GIRL
+===================================================== */
+
+.anime-stage{
+    position:relative;
+
+    width:300px;
+    height:350px;
+
+    margin:25px auto;
+}
+
+.anime-girl{
+    position:absolute;
+
+    left:50%;
+    bottom:0;
+
+    transform:translateX(-50%);
+
+    width:180px;
+    height:270px;
+
+    animation:
+        animeFloat 3s ease-in-out infinite;
+
+    filter:
+        drop-shadow(
+            0 20px 30px #0009
+        );
+}
+
+@keyframes animeFloat{
+    50%{
+        transform:
+            translateX(-50%)
+            translateY(-12px);
+    }
+}
+
+
+/* hair */
+
+.hair{
+    position:absolute;
+
+    width:150px;
+    height:155px;
+
+    left:15px;
+    top:0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #27134c,
+            #9b52ff
+        );
+
+    border-radius:
+        55%
+        55%
+        45%
+        45%;
+}
+
+.hair:before,
+.hair:after{
+    content:"";
+
+    position:absolute;
+
+    width:50px;
+    height:125px;
+
+    top:55px;
+
+    background:#432071;
+
+    border-radius:50%;
+}
+
+.hair:before{
+    left:-18px;
+    transform:rotate(15deg);
+}
+
+.hair:after{
+    right:-18px;
+    transform:rotate(-15deg);
+}
+
+
+/* face */
+
+.face{
+    position:absolute;
+
+    width:108px;
+    height:118px;
+
+    left:36px;
+    top:40px;
+
+    background:#ffd9c8;
+
+    border-radius:
+        48%
+        48%
+        45%
+        45%;
+
+    z-index:2;
+}
+
+.eye{
+    position:absolute;
+
+    top:45px;
+
+    width:19px;
+    height:28px;
+
+    border-radius:50%;
+
+    background:#28143e;
+}
+
+.eye:after{
+    content:"";
+
+    position:absolute;
+
+    width:6px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:white;
+
+    left:4px;
+    top:4px;
+}
+
+.eye.left{
+    left:23px;
+}
+
+.eye.right{
+    right:23px;
+}
+
+.mouth{
+    position:absolute;
+
+    width:23px;
+    height:11px;
+
+    left:42px;
+    top:83px;
+
+    border-bottom:
+        3px solid #b34b6f;
+
+    border-radius:50%;
+}
+
+
+/* body */
+
+.body{
+    position:absolute;
+
+    width:125px;
+    height:110px;
+
+    left:28px;
+    top:148px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff63aa,
+            #9a4cff
+        );
+
+    clip-path:
+        polygon(
+            15% 0,
+            85% 0,
+            100% 100%,
+            0 100%
+        );
+
+    border-radius:25px;
+}
+
+.arm{
+    position:absolute;
+
+    width:26px;
+    height:92px;
+
+    top:153px;
+
+    background:#ffd9c8;
+
+    border-radius:20px;
+}
+
+.arm.left{
+    left:8px;
+    transform:rotate(25deg);
+}
+
+.arm.right{
+    right:8px;
+    transform:rotate(-35deg);
+}
+
+
+/* microphone */
+
+.microphone{
+    position:absolute;
+
+    right:-18px;
+    top:160px;
+
+    font-size:50px;
+
+    animation:
+        microphone 1s infinite alternate;
+}
+
+@keyframes microphone{
+    to{
+        transform:
+            rotate(-10deg)
+            scale(1.08);
+    }
+}
+
+
+/* singing bubble */
+
+.song-bubble{
+    position:absolute;
+
+    right:-55px;
+    top:40px;
+
+    padding:12px 15px;
+
+    color:#7d3370;
+
+    background:white;
+
+    border-radius:
+        20px
+        20px
+        5px
+        20px;
+
+    font-weight:bold;
+
+    box-shadow:
+        0 10px 30px #0006;
+
+    animation:
+        bubble 2s infinite;
+}
+
+@keyframes bubble{
+    50%{
+        transform:translateY(-8px);
+    }
+}
+
+
+/* =====================================================
+   MUSIC BUTTON
+===================================================== */
+
+.music-box{
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin-top:20px;
+}
+
+.music-btn{
+    border:
+        1px solid #ffffff44;
+
+    background:#ffffff18;
+
+    color:white;
+
+    padding:13px 19px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    backdrop-filter:blur(10px);
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+section{
+    padding:90px 18px;
+
+    background:#10051a;
+}
+
+.title{
+    text-align:center;
+
+    font-size:
+        clamp(
+            35px,
+            7vw,
+            58px
+        );
+
+    margin-bottom:45px;
+}
+
+
+/* =====================================================
+   LETTER
+===================================================== */
+
+.glass{
+    max-width:850px;
+
+    margin:auto;
+
+    padding:42px 28px;
+
+    border-radius:32px;
+
+    background:#ffffff0d;
+
+    border:
+        1px solid #ffffff25;
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+        0 25px 70px #0006;
+}
+
+.letter{
+    text-align:center;
+
+    font-size:19px;
+
+    line-height:2;
+
+    color:#ffe8f2;
+}
+
+.signature{
+    margin-top:25px;
+
+    text-align:right;
+
+    color:#ffc2dc;
+
+    font-weight:bold;
+}
+
+
+/* =====================================================
+   PHOTO UPLOAD
+===================================================== */
+
+.photo-section{
+    background:
+        radial-gradient(
+            circle at 50% 0,
+            #712b6b,
+            #160820 55%
+        );
+}
+
+.photo-upload{
+    max-width:900px;
+
+    margin:
+        0 auto
+        45px;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:#ffffff0c;
+
+    border:
+        1px solid #ffffff25;
+
+    backdrop-filter:blur(15px);
+}
+
+.photo-upload input{
+    display:none;
+}
+
+.upload-btn{
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:13px 22px;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:#842e70;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.gallery{
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:25px;
+}
+
+.photo-card{
+    position:relative;
+
+    padding:10px;
+
+    border-radius:28px;
+
+    background:#ffffff0d;
+
+    border:
+        1px solid #ffffff22;
+
+    box-shadow:
+        0 20px 50px #0006;
+
+    overflow:hidden;
+}
+
+.photo-card img{
+    width:100%;
+
+    height:430px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    display:block;
+}
+
+.photo-card p{
+    text-align:center;
+
+    padding:15px;
+
+    color:#ffd7e8;
+}
+
+
+/* =====================================================
+   ANIME OVERLAY
+===================================================== */
+
+.photo-character{
+    position:absolute;
+
+    bottom:35px;
+    right:12px;
+
+    z-index:5;
+
+    font-size:72px;
+
+    cursor:pointer;
+
+    filter:
+        drop-shadow(
+            0 10px 10px #0009
+        );
+
+    animation:
+        characterBounce 2.5s infinite;
+}
+
+@keyframes characterBounce{
+    50%{
+        transform:
+            translateY(-12px)
+            rotate(4deg);
+    }
+}
+
+
+/* =====================================================
+   WISHES
+===================================================== */
+
+.wishes{
+    max-width:1000px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:20px;
+}
+
+.wish{
+    padding:30px 20px;
+
+    text-align:center;
+
+    border-radius:25px;
+
+    background:#ffffff0c;
+
+    border:
+        1px solid #ffffff22;
+
+    transition:.3s;
+}
+
+.wish:hover{
+    transform:translateY(-10px);
+}
+
+.wish .emoji{
+    font-size:48px;
+}
+
+.wish h3{
+    margin:12px 0;
+}
+
+.wish p{
+    color:#ead8e8;
+
+    line-height:1.6;
+}
+
+
+/* =====================================================
+   GIFT
+===================================================== */
+
+.gift-section{
+    text-align:center;
+}
+
+.gift{
+    display:inline-block;
+
+    font-size:110px;
+
+    cursor:pointer;
+
+    animation:
+        gift 2s infinite;
+}
+
+@keyframes gift{
+    50%{
+        transform:
+            translateY(-15px)
+            rotate(5deg);
+    }
+}
+
+.secret{
+    display:none;
+
+    max-width:700px;
+
+    margin:25px auto;
+
+    line-height:1.8;
+}
+
+.secret.show{
+    display:block;
+
+    animation:
+        appear .8s;
+}
+
+@keyframes appear{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+.floating{
+    position:fixed;
+
+    bottom:-50px;
+
+    z-index:10000;
+
+    pointer-events:none;
+
+    animation:
+        floatUp linear forwards;
+}
+
+@keyframes floatUp{
+    to{
+        transform:
+            translateY(-110vh)
+            rotate(600deg);
+
+        opacity:0;
+    }
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+    padding:45px 20px;
+
+    text-align:center;
+
+    background:#050208;
+
+    color:#ffd1e5;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:700px){
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .wishes{
+        grid-template-columns:1fr;
+    }
+
+    .photo-card img{
+        height:430px;
+    }
+
+    .moon{
+        width:70px;
+        height:70px;
+    }
+
+    .anime-stage{
+        transform:scale(.9);
+    }
+
+    .hero h1{
+        letter-spacing:-2px;
+    }
+
+    section{
+        padding:65px 14px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     INTRO SCREEN
+===================================================== -->
+
+<div id="intro">
+
+    <div class="stars" id="stars"></div>
+
+    <div class="intro-content">
+
+        <small>
+            ✨ A SPECIAL SURPRISE ✨
+        </small>
+
+        <h1>
+            Happy Birthday
+
+            <span class="gradient">
+                Sister 💖
+            </span>
+        </h1>
+
+        <p>
+            Ek magical anime birthday surprise
+            tumhara wait kar raha hai 🌸
+
+            <br>
+
+            Gift open karo...
+        </p>
+
+        <button
+            class="open-btn"
+            onclick="openBirthday()"
+        >
+            🎁 OPEN THE MAGIC
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     MAIN PAGE
+===================================================== -->
+
+<div id="page">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<header class="hero">
+
+    <div class="moon"></div>
+
+    <div class="hero-content">
+
+        <div class="badge">
+            🌸 Anime Birthday Edition 🌸
+        </div>
+
+
+        <h1>
+
+            Happy Birthday
+
+            <span class="gradient">
+                My Sister 🥳
+            </span>
+
+        </h1>
+
+
+        <!-- ANIME CHARACTER -->
+
+        <div class="anime-stage">
+
+            <div class="anime-girl">
+
+                <div class="hair"></div>
+
+                <div class="face">
+
+                    <div class="eye left"></div>
+
+                    <div class="eye right"></div>
+
+                    <div class="mouth"></div>
+
+                </div>
+
+                <div class="body"></div>
+
+                <div class="arm left"></div>
+
+                <div class="arm right"></div>
+
+                <div class="microphone">
+                    🎤
+                </div>
+
+                <div class="song-bubble">
+                    ♪ Happy Birthday ♪
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <p class="hero-text">
+
+            Aaj ka din sirf tumhare naam. 💖
+
+            <br>
+
+            Is magical anime birthday world mein
+            tumhari memories, wishes aur birthday
+            magic sab ek jagah hain.
+
+        </p>
+
+
+        <div class="music-box">
+
+            <button
+                class="music-btn"
+                onclick="toggleMusic()"
+            >
+                🎵
+                <span id="musicText">
+                    Start Birthday Song
+                </span>
+            </button>
+
+
+            <button
+                class="music-btn"
+                onclick="singCharacter()"
+            >
+                🎤 Character Sing
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     LETTER
+===================================================== -->
+
+<section>
+
+    <h2 class="title">
+        💌 A Letter For My Sister
+    </h2>
+
+
+    <div class="glass">
+
+        <div class="letter">
+
+            Dear Sister ❤️,
+
+            <br><br>
+
+            Tum sirf meri sister nahi ho,
+            tum meri life ki un special people
+            mein se ho jinki presence ordinary
+            moments ko bhi special bana deti hai.
+
+            <br><br>
+
+            Aaj tumhare birthday par meri wish hai
+            ki tumhari life happiness, success,
+            adventures aur beautiful memories
+            se bhari rahe. 🌸✨
+
+            <br><br>
+
+            Tum jo bhi dream dekho,
+            woh ek din reality bane.
+
+            <br><br>
+
+            Hamesha smile karti rehna,
+            khush rehna aur apne dreams
+            ke peeche jaana.
+
+            <br><br>
+
+            🎂 Happy Birthday once again! 🥳💖
+
+        </div>
+
+
+        <div class="signature">
+
+            — With lots of love ❤️
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PHOTO SECTION
+===================================================== -->
+
+<section class="photo-section">
+
+    <h2 class="title">
+        📸 Our Anime Memories
+    </h2>
+
+
+    <div class="photo-upload">
+
+        <h3>
+            🌸 Apni 10 Photos Yahan Add Karo
+        </h3>
+
+        <p
+            style="
+                margin-top:10px;
+                color:#eacfe0;
+            "
+        >
+            Photos select karte hi
+            gallery automatically ban jayegi.
+        </p>
+
+
+        <label class="upload-btn">
+
+            📷 Select Up To 10 Photos
+
+            <input
+                id="photoInput"
+                type="file"
+                accept="image/*"
+                multiple
+            >
+
+        </label>
+
+    </div>
+
+
+    <div
+        class="gallery"
+        id="gallery"
+    >
+
+        <!-- DEFAULT PHOTOS -->
+
+        <div class="photo-card">
+
+            <img
+                src="photo1.jpg"
+                alt="Memory 1"
+            >
+
+            <div class="photo-character">
+                🌸
+            </div>
+
+            <p>
+                💖 Memory #1
+            </p>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo2.jpg"
+                alt="Memory 2"
+            >
+
+            <div class="photo-character">
+                ✨
+            </div>
+
+            <p>
+                🌸 Memory #2
+            </p>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo3.jpg"
+                alt="Memory 3"
+            >
+
+            <div class="photo-character">
+                🎀
+            </div>
+
+            <p>
+                💕 Memory #3
+            </p>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo4.jpg"
+                alt="Memory 4"
+            >
+
+            <div class="photo-character">
+                🌷
+            </div>
+
+            <p>
+                ✨ Memory #4
+            </p>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo5.jpg"
+                alt="Memory 5"
+            >
+
+            <div class="photo-character">
+                🧚
+            </div>
+
+            <p>
+                🌸 Memory #5
+            </p>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo6.jpg"
+                alt="Memory 6"
+            >
+
+            <div class="photo-character">
+                💖
+            </div>
+
+            <p>
+                🥰 Memory #6
+            </p>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo7.jpg"
+                alt="Memory 7"
+            >
+
+            <div class="photo-character">
+                ⭐
+            </div>
+
+            <p>
+                🌺 Memory #7
+            </p>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo8.jpg"
+                alt="Memory 8"
+            >
+
+            <div class="photo-character">
+                🎀
+            </div>
+
+            <p>
+                💗 Memory #8
+            </p>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo9.jpg"
+                alt="Memory 9"
+            >
+
+            <div class="photo-character">
+                🌸
+            </div>
+
+            <p>
+                🌷 Memory #9
+            </p>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="photo10.jpg"
+                alt="Memory 10"
+            >
+
+            <div class="photo-character">
+                ✨
+            </div>
+
+            <p>
+                ❤️ Memory #10
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WISHES
+===================================================== -->
+
+<section>
+
+    <h2 class="title">
+        ✨ My Wishes For You
+    </h2>
+
+
+    <div class="wishes">
+
+        <div class="wish">
+
+            <div class="emoji">
+                🌸
+            </div>
+
+            <h3>
+                Happiness
+            </h3>
+
+            <p>
+                Tumhari life hamesha smiles,
+                happiness aur positive moments
+                se bhari rahe.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="emoji">
+                🚀
+            </div>
+
+            <h3>
+                Success
+            </h3>
+
+            <p>
+                Tumhare saare dreams
+                ek din reality bane.
+            </p>
+
+        </div>
+
+
+        <div class="wish">
+
+            <div class="emoji">
+                💖
+            </div>
+
+            <h3>
+                Beautiful Life
+            </h3>
+
+            <p>
+                Life mein amazing adventures,
+                love aur unforgettable memories ho.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL GIFT
+===================================================== -->
+
+<section class="gift-section">
+
+    <h2 class="title">
+        🎁 One Last Surprise
+    </h2>
+
+
+    <div class="glass">
+
+        <div
+            class="gift"
+            onclick="openGift()"
+        >
+            🎁
+        </div>
+
+
+        <p>
+            Gift ko tap karo 👆
+        </p>
+
+
+        <div
+            class="secret"
+            id="secret"
+        >
+
+            <h2 class="gradient">
+                💖 YOU ARE AMAZING! 💖
+            </h2>
+
+            <br>
+
+            <p>
+
+                Happy Birthday once again! 🥳
+
+                <br><br>
+
+                I hope ye little anime birthday
+                world tumhare face par ek badi si
+                smile laaye. 🌸
+
+                <br><br>
+
+                Ab cake mere bina mat khana 😂🎂
+
+                <br><br>
+
+                Love you, Sister! ❤️
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    🌸 Made specially for my Sister ❤️
+
+    <br><br>
+
+    Happy Birthday 🎂✨
+
+</footer>
+
+</div>
+
+
+<script>
+
+/* =====================================================
+   STARS
+===================================================== */
+
+const stars =
+    document.getElementById("stars");
+
+
+for(let i=0;i<130;i++){
+
+    const star =
+        document.createElement("div");
+
+    star.className="star";
+
+    star.style.left =
+        Math.random()*100+"%";
+
+    star.style.top =
+        Math.random()*100+"%";
+
+    star.style.animationDelay =
+        Math.random()*2+"s";
+
+    stars.appendChild(star);
+}
+
+
+/* =====================================================
+   OPEN WEBSITE
+===================================================== */
+
+function openBirthday(){
+
+    document
+        .getElementById("page")
+        .classList.add("show");
+
+
+    document
+        .getElementById("intro")
+        .classList.add("hide");
+
+
+    burst();
+
+}
+
+
+/* =====================================================
+   FLOATING EFFECT
+===================================================== */
+
+function createFloating(){
+
+    const item =
+        document.createElement("div");
+
+    item.className="floating";
+
+
+    const list=[
+        "💖",
+        "💗",
+        "💕",
+        "🌸",
+        "✨",
+        "🌷",
+        "🎀",
+        "⭐",
+        "🦋"
+    ];
+
+
+    item.innerHTML =
+        list[
+            Math.floor(
+                Math.random()*list.length
+            )
+        ];
+
+
+    item.style.left =
+        Math.random()*100+"vw";
+
+
+    item.style.fontSize =
+        16+Math.random()*28+"px";
+
+
+    item.style.animationDuration =
+        4+Math.random()*5+"s";
+
+
+    document.body.appendChild(item);
+
+
+    setTimeout(
+        ()=>item.remove(),
+        9000
+    );
+}
+
+
+setInterval(
+    createFloating,
+    700
+);
+
+
+/* =====================================================
+   BURST
+===================================================== */
+
+function burst(){
+
+    for(let i=0;i<100;i++){
+
+        setTimeout(
+            createFloating,
+            i*15
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   GIFT
+===================================================== */
+
+function openGift(){
+
+    document
+        .getElementById("secret")
+        .classList.add("show");
+
+
+    burst();
+
+}
+
+
+/* =====================================================
+   PHOTO UPLOAD
+===================================================== */
+
+const photoInput =
+    document.getElementById("photoInput");
+
+const gallery =
+    document.getElementById("gallery");
+
+
+photoInput.addEventListener(
+    "change",
+    function(){
+
+        const files =
+            Array.from(
+                this.files
+            ).slice(0,10);
+
+
+        if(!files.length)
+            return;
+
+
+        gallery.innerHTML="";
+
+
+        const characters=[
+            "🌸",
+            "✨",
+            "🎀",
+            "🌷",
+            "🧚",
+            "💖",
+            "⭐",
+            "🦋",
+            "🌺",
+            "💕"
+        ];
+
+
+        files.forEach(
+            (file,index)=>{
+
+                const reader =
+                    new FileReader();
+
+
+                reader.onload =
+                    function(e){
+
+                        const card =
+                            document.createElement(
+                                "div"
+                            );
+
+
+                        card.className =
+                            "photo-card";
+
+
+                        card.innerHTML=`
+
+                            <img
+                                src="${e.target.result}"
+                                alt="Birthday Memory"
+                            >
+
+                            <div
+                                class="photo-character"
+                            >
+                                ${characters[index]}
+                            </div>
+
+                            <p>
+                                💖 Beautiful
+                                Memory #${index+1}
+                            </p>
+
+                        `;
+
+
+                        gallery.appendChild(card);
+
+                    };
+
+
+                reader.readAsDataURL(file);
+
+            }
+        );
+
+    }
+);
+
+
+/* =====================================================
+   BIRTHDAY MUSIC
+===================================================== */
+
+let audioContext=null;
+
+let musicTimer=null;
+
+let musicPlaying=false;
+
+let noteIndex=0;
+
+
+const melody=[
+
+    392,392,440,392,523,494,
+
+    392,392,440,392,587,523,
+
+    392,392,784,659,523,494,440,
+
+    698,698,659,523,587,523
+
+];
+
+
+function startAudio(){
+
+    if(!audioContext){
+
+        audioContext =
+            new(
+                window.AudioContext ||
+                window.webkitAudioContext
+            )();
+
+    }
+
+}
+
+
+function playNote(
+    frequency,
+    duration=.35
+){
+
+    startAudio();
+
+
+    const oscillator =
+        audioContext.createOscillator();
+
+
+    const gain =
+        audioContext.createGain();
+
+
+    oscillator.type="sine";
+
+
+    oscillator.frequency.value =
+        frequency;
+
+
+    gain.gain.setValueAtTime(
+        .0001,
+        audioContext.currentTime
+    );
+
+
+    gain.gain.exponentialRampToValueAtTime(
+        .18,
+        audioContext.currentTime+.03
+    );
+
+
+    gain.gain.exponentialRampToValueAtTime(
+        .0001,
+        audioContext.currentTime+duration
+    );
+
+
+    oscillator.connect(gain);
+
+    gain.connect(
+        audioContext.destination
+    );
+
+
+    oscillator.start();
+
+
+    oscillator.stop(
+        audioContext.currentTime+
+        duration
+    );
+
+}
+
+
+/* =====================================================
+   MUSIC TOGGLE
+===================================================== */
+
+function toggleMusic(){
+
+    startAudio();
+
+
+    if(musicPlaying){
+
+        musicPlaying=false;
+
+        clearTimeout(
+            musicTimer
+        );
+
+
+        document
+            .getElementById("musicText")
+            .innerText=
+            "Start Birthday Song";
+
+
+        return;
+
+    }
+
+
+    musicPlaying=true;
+
+    document
+        .getElementById("musicText")
+        .innerText=
+        "⏸ Stop Birthday Song";
+
+
+    noteIndex=0;
+
+    playMusic();
+
+}
+
+
+function playMusic(){
+
+    if(!musicPlaying)
+        return;
+
+
+    playNote(
+        melody[noteIndex],
+        .38
+    );
+
+
+    noteIndex++;
+
+    if(
+        noteIndex>=
+        melody.length
+    ){
+
+        noteIndex=0;
+
+    }
+
+
+    musicTimer =
+        setTimeout(
+            playMusic,
+            420
+        );
+
+}
+
+
+/* =====================================================
+   CHARACTER SING
+===================================================== */
+
+function singCharacter(){
+
+    startAudio();
+
+
+    const song=[
+
+        392,
+        392,
+        440,
+        392,
+        523,
+        494,
+
+        392,
+        392,
+        440,
+        392,
+        587,
+        523
+
+    ];
+
+
+    song.forEach(
+        (note,index)=>{
+
+            setTimeout(
+                ()=>{
+
+                    playNote(
+                        note,
+                        .35
+                    );
+
+                    createFloating();
+
+                },
+
+                index*380
+            );
+
+        }
+    );
+
+
+    burst();
+
+}
+
+
+/* =====================================================
+   PHOTO CHARACTER CLICK
+===================================================== */
+
+document.addEventListener(
+    "click",
+    function(event){
+
+        if(
+            event.target.classList
+                .contains(
+                    "photo-character"
+                )
+        ){
+
+            event.target.style.transform=
+                "scale(1.5) rotate(15deg)";
+
+
+            setTimeout(
+                ()=>{
+
+                    event.target.style.transform="";
+
+                },
+
+                500
+            );
+
+
+            burst();
+
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>
